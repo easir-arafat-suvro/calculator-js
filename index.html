@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        div:hover {
+            cursor: pointer;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <section class=" bg-gray-400 rounded p-4 w-80 mx-auto mt-8">
+        <header class="text-center text-3xl text-yellow-300 font-bold">Casio Calculator</header>
+        <main class="">
+            <section class="">
+
+                <h3 id="screen"
+                    class=" h-20 my-4 p-2 border-4 border-black rounded bg-gray-700 text-4xl text-white flex items-center justify-end">
+                </h3>
+            </section>
+            <section class="h-80 grid grid-flow-col grid-cols-4 grid-rows-5 gap-4 bg-">
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-c" onClick="replyClick(this.id)">C
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-7" onClick="replyClick(this.id)">7
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-4" onClick="replyClick(this.id)">4
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-1" onClick="replyClick(this.id)">1
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-point" onClick="replyClick(this.id)">.
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-ac" onClick="replyClick(this.id)">
+                    AC
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-8" onClick="replyClick(this.id)">8
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-5" onClick="replyClick(this.id)">5
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-2" onClick="replyClick(this.id)">2
+                </div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-0" onClick="replyClick(this.id)">
+                    0</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-plus-minus" onClick="replyClick(this.id)">
+                    +/-</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-9" onClick="replyClick(this.id)">
+                    9</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-6" onClick="replyClick(this.id)">
+                    6</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-3" onClick="replyClick(this.id)">
+                    3</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit col-span-2"
+                    id="digit-equal" onClick="replyClick(this.id)">
+                    =</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-divide" onClick="replyClick(this.id)">
+                    /</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-multiply" onClick="replyClick(this.id)">
+                    *</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-minus" onClick="replyClick(this.id)">
+                    -</div>
+                <div class="bg-gray-700 text-white flex items-center justify-center text-2xl rounded-md digit"
+                    id="digit-plus" onClick="replyClick(this.id)">
+                    +</div>
+            </section>
+        </main>
+    </section>
+
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>
